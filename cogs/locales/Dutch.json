@@ -1,0 +1,182 @@
+{
+    "keys": {
+        "description": "beschrijving", 
+        "requires": "heeft nodig", 
+        "usage": "gebruik", 
+        "example": "voorbeeld",
+        "error": "fout",
+        "related commands": "soortgelijke commando's",
+        "help text": "hulp voor commando"
+    },
+    "error": "geen hulp gevonden",
+    "help": {
+        "taptitans": {},
+        "help": {
+            "description": "Geeft informatie over een commando. \nGebruik `.info commands` om alle commando's te zien.",
+            "requires": "",
+            "usage": ".help <commando>",
+            "example": ".help leaderboard"
+        },
+        "tt setinterval": {
+            "description": "Verandert hoe lang voor een Titanenlord de leden van een clan gepingd worden ",
+            "requires": "GM- of Meester",
+            "usage": ".tt setinterval <Tijd1>, <TIjd2>, <Tijd3>, [...], <TijdN>",
+            "example": ".tt setinterval 15 10 5 2 1"
+        },
+        "tt settext": {
+            "description": "Verandert de tekst voor pings en dergelijke. Er zijn meerder teksten aan te passen: `{time}`, `{spawn}`, `{cq}`, `{round}`.",
+            "requires": "GM- of Meester",
+            "usage": ".tt settext <welke tekst> <tekst>",
+            "example": ".tt settext timer {time} tot Lord #{cq} (@ {spawn})"
+        },
+        "emote": {
+            "description": "Laat een emoji als .jpg of .gif zien, afhankelijk van de emoji.",
+            "requires": "",
+            "usage": ".emote <emoji>",
+            "example": ".emote :5:"
+        },
+        "titancount": {
+            "description": "Berekent hoe veel titanen je op een bepaalde stage hebt met een bepaald niveau van IA.",
+            "requires": "",
+            "usage": ".titancount <Stage> <IA>",
+            "example": ".titancount 16000 30"
+        },
+        "8ball": {
+            "description": "Geeft een antwoord op een ja-neevraag.",
+            "requires": "",
+            "usage": ".8ball <Vraag>",
+            "example": ".8ball Is Pleb homo?"
+        },
+        "when": {
+            "description": "Geeft aan hoe lang het duurt voordat de clanmissie begint.",
+            "requires": "Kan alleen in het kanaal gebruikt worden dat door een administrator vastgelegd is als `when`.",
+            "usage": ".when boss",
+            "example": ""
+        },
+        "boss clear": {
+            "description": "Verwijdert de lopende timer.",
+            "requires": "GM-, Meestere en Timer",
+            "usage": ".boss clear",
+            "example": ""
+        },
+        "math": {
+            "description": "Wordt voor berekeningen gebruikt. \nMogelijkheden:\n+ (optellen)\n- (aftrekken)\n\\* (vermenigvuldigen)\n/ (delen)\n^ (machtsverheffen)\n\u221A (worteltrekken)\n% (modulo)\n() (haakjes)",
+            "requires": "",
+            "usage": ".math <berekening...>",
+            "example": ".math ((1+1)*(4^2))/7"
+        },
+        "=": {"refer to": "math"},
+        "leaderboard": {
+            "description": "Laat een ranglijst zien op basis van verzamelde xp.",
+            "requires": "",
+            "usage": ".lb",
+            "example": ".leaderboard"
+        },
+        "bae": {
+            "description": "Zeigt an, ob du bae bist (Hinweis: Vermutlich bist du es nicht).",
+            "requires": "",
+            "usage": ".bae",
+            "example": ""
+        },
+        "avatar": {
+            "description": "Zeigt das Profilbild eines Nutzers an.",
+            "requires": "",
+            "usage": ".avatar <Nutzername>",
+            "example": ".avatar effrill3"
+        },
+        "rank": {
+            "description": "Zeigt deinen oder den Rang eines Nutzers in der Bestenliste an.",
+            "requires": "",
+            "usage": ".rank <Nutzername>",
+            "example": ".rank jibril"
+        },
+        "info server": {
+            "description": "Zeigt allgemeine Informationen über den Server an: Region, Nutzerzahlen, Text- und Sprachkanäle, Rollenanzahl und Eigentümer.",
+            "requires": "",
+            "usage": ".info server",
+            "example": ""
+        },
+        "loa": {
+            "description": "Legt eine Beurlaubung (inklusive Dauer) fest.",
+            "requires": "eine clanrelevante Rolle.",
+            "usage": ".loa <Zeit> <Nachricht>",
+            "example": ".loa 51w29d23h59m59s Ich bin sehr faul, ok?"
+        },
+        "loa clear": {
+            "description": "Löscht eine zuvor festgelegte Beurlaubung",
+            "requires": "Eine vorher festgelegte Beurlaubung und eine clanrelevante Rolle.",
+            "usage": ".loa clear",
+            "example": ""
+        },
+        "suggestion": {
+            "description": "Reicht einen Verbesserungsvorschlag ein.",
+            "requires": "Minimum 30 Zeichen lang und maximal einen pro Stunde.",
+            "usage": ".suggest <Erklärung...>",
+            "example": ".suggest Lasst den Bot Bilder im Zitat-Kanal zitieren"
+        },
+        "enable": {
+            "description": "Aktiviert einen deaktivierten Befehl.",
+            "requires": "Eigentümer, Admin, Moderator oder Verwalter",
+            "usage": ".enable <Befehl>",
+            "example": ".enable emote"
+        },
+        "disable": {
+            "description": "Deaktiviert einen aktivierten Befehl.",
+            "requires": "Eigentümer, Admin, Moderator oder Verwalter",
+            "usage": ".disable <Befehl>",
+            "example": ".disable emote"
+        },
+        "boss": {
+            "description": "Eine Sammlung von Befehlen für das Erstellen und Löschen von Timern.",
+            "requires": "GM-, Master- oder Timerrolle"
+        },
+        "boss in": {
+            "description": "Setzt den Bosstimer in `x` Zeit.",
+            "requires": "GM-, Master- oder Timerrolle",
+            "usage": ".boss in <Zeit...>",
+            "example": ".boss in 5h59m20s"
+        },
+        "boss ttk": {
+            "description": "Setzt den Timer anhand der Killtime des letzten Bosses.",
+            "requires": "GM-, Master- oder Timerrolle",
+            "usage": ".boss ttk <Zeit...>",
+            "example": ".boss ttk 2m20s"
+        },
+        "restrict": {
+            "description": "Beschränkt bestimmte Befehle für festgelegte Rollen. Es können mehrere Rollen festgelegt werden.",
+            "requires": "Besitzer, Moderator, Verwalter",
+            "usage": ".restrict <Befehl> <Rolle>",
+            "example": ".restrict moderator disable"
+        },
+        "loas": {
+            "description": "Zeigt eine Liste der Beurlaubungen an.",
+            "requires": "GM- oder Masterrolle",
+            "usage": ".loas",
+            "example": ""
+        },
+        "ping": {
+            "description": "Ping den Bot.",
+            "requires": "",
+            "usage": ".ping",
+            "example": ""
+        },
+        "bug": {
+            "description": "Reicht einen Fehlerreport bezüglich des Bots ein.",
+            "requires": "Mindestens 30 Zeichen lang und maximal einen pro Stunde.",
+            "usage": ".bug <Erklärung...>",
+            "example": ".bug So ähm, ich hab hier dieses Ding ... and, nunja, es funktioniet nicht. HILFE!!"
+        },
+        "support": {
+            "description": "Gibt den Link zum offiziellen Botsupport auf.",
+            "requires": "",
+            "usage": ".support",
+            "example": ""
+        },
+        "my": {
+            "description": "Ändert Nutzereinstellungen.",
+            "requires": "",
+            "usage": ".my <Einstellung> <Wert>",
+            "example": ".my language"
+        }
+    }
+}
